@@ -1,6 +1,6 @@
 Name:           openvswitch
 Version:        1.7.1
-Release:        1
+Release:        2
 Summary:        Open vSwitch daemon/database/utilities
 
 Group: 		System/Cluster
@@ -32,7 +32,7 @@ BuildRequires:  python python-twisted-core python-twisted-conch python-zope-inte
 BuildRequires:  desktop-file-utils
 BuildRequires:  groff graphviz
 
-Requires:       openssl iproute module-init-tools
+Requires:       openssl iproute2 module-init-tools
 
 Requires(post):  systemd-units
 Requires(preun): systemd-units

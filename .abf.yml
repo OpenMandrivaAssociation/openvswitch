@@ -1,10 +1,2 @@
 sources:
-  "ifdown-ovs:"	920aabf7addef876fa3075eb5d9a294bfd692c9e
-  "ifup-ovs:"	8ed4ba9ab93e8f1a289e0319f24b14db60120f6f
-  "openvswitch-1.7.1.tar.gz:"	3afed32389bf349f4b454352a827d7069d455f9e
-  "openvswitch-configure-ovskmod-var.patch:"	204933bbdb834c8621e2378d820b2e4a495b0399
-  "openvswitch.init:"	575734382a9658de683daba65a7bf74eb7b59358
-  "openvswitch.logrotate:"	fd6c75cbebff0d3077c27d21cec82d7d253bf7ff
-  "openvswitch.service:"	d8d0adf10e282e9a7a51c5b27cc3771b6cca7267
-  "ovsdbmonitor.desktop:"	d9b31f613402a4b0d7c08c2cc9175ff05c8d2f19
-  "ovsdbmonitor-move-to-its-own-data-directory.patch:"	9d4fb0f7939b470304a1144c86a67b2e37e8d113
+  "openvswitch-1.7.1.tar.gz": 3afed32389bf349f4b454352a827d7069d455f9e
