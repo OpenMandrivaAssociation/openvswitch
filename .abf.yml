@@ -1,2 +1,4 @@
+removed_sources:
+  openvswitch-1.7.1.tar.gz: 3afed32389bf349f4b454352a827d7069d455f9e
 sources:
-  "openvswitch-1.7.1.tar.gz": 3afed32389bf349f4b454352a827d7069d455f9e
+  openvswitch-1.9.0.tar.gz: 1f095df078dfde095210917ec9b3c7f72d84807c

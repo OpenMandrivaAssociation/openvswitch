@@ -1,6 +1,6 @@
 Name:           openvswitch
-Version:        1.7.1
-Release:        2
+Version:        1.9.0
+Release:        1
 Summary:        Open vSwitch daemon/database/utilities
 
 Group: 		System/Cluster
@@ -84,13 +84,11 @@ issues in Open vSwitch setup.
 
 
 %build
-%configure --enable-ssl --with-pkidir=%{_sharedstatedir}/openvswitch/pki OVSKMOD=openvswitch
-make %{?_smp_mflags}
-
+%configure2_5x --enable-ssl --with-pkidir=%{_sharedstatedir}/openvswitch/pki OVSKMOD=openvswitch
+%make
 
 %install
-rm -rf %{buildroot}/
-make install DESTDIR=%{buildroot}/
+%makeinstall_std
 
 install -d -m 0755 %{buildroot}/%{_sysconfdir}/openvswitch
 
@@ -159,6 +157,8 @@ fi
 %{_bindir}/ovs-parse-leaks
 %{_bindir}/ovs-pcap
 %{_bindir}/ovs-pki
+%{_bindir}/ovs-l3ping
+%{_bindir}/ovs-parse-backtrace
 %{_bindir}/ovs-tcpundump
 %{_bindir}/ovs-vsctl
 %{_bindir}/ovsdb-client
@@ -183,6 +183,8 @@ fi
 %{_mandir}/man8/ovs-pki.8*
 %{_mandir}/man8/ovs-vsctl.8*
 %{_mandir}/man8/ovs-vswitchd.8*
+%{_mandir}/man8/ovs-l3ping.1*
+%{_mandir}/man8/ovs-parse-backtrace.1*
 # /usr/share/openvswitch/bugtool-plugins and
 # /usr/share/openvswitch/scripts/ovs-bugtool* are LGPLv2+
 %{_datadir}/openvswitch/
@@ -207,5 +209,3 @@ fi
 %{_mandir}/man8/ovs-test.8*
 %{_mandir}/man8/ovs-vlan-test.8*
 %{python_sitelib}/ovstest
-
-
