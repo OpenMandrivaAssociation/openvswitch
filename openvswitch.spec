@@ -1,6 +1,6 @@
 Name:           openvswitch
 Version:        1.9.0
-Release:        1
+Release:        2
 Summary:        Open vSwitch daemon/database/utilities
 
 Group: 		System/Cluster
