@@ -10,7 +10,7 @@ Group: 		System/Cluster
 # datapath/ is GPLv2 (although not built into any of the binary packages)
 # python/compat is Python (although not built into any of the binary packages)
 License:        ASL 2.0 and LGPLv2+ and SISSL
-URL:            http://openvswitch.org
+URL:            https://openvswitch.org
 Source0:        http://openvswitch.org/releases/%{name}-%{version}.tar.gz
 Source1:        openvswitch.service
 Source2:        openvswitch.init
