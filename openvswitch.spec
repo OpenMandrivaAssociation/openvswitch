@@ -27,6 +27,11 @@ Patch0:         openvswitch-configure-ovskmod-var-autoconfd.patch
 Patch1:         ovsdbmonitor-move-to-its-own-data-directory-automaked.patch
 Patch2:         openvswitch-rhel-initscripts-resync.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  systemd-units openssl openssl-devel
 BuildRequires:  python python-twisted-core python-twisted-conch python-zope-interface PyQt4
 BuildRequires:  desktop-file-utils
